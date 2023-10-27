@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@600&family=Playfair+Display:ital,wght@0,500;1,500&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+}
+
+
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.typewriter h1 {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    font-size: 35px;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+     letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card-1 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner-1 {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-1:hover .flip-card-inner-1 {
+    transform: rotateX(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front-1, .flip-card-back-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #8fc6f2;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front-1 {
+    background-color: 
+    #142745;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back-1 {
+    background-color:  #142745;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card-2 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+ 
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-2:hover .flip-card-inner-2 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front-2, .flip-card-back-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #8fc6f2;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front-2 {
+    background-color: 
+    #142745;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back-2 {
+    background-color:  #142745;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card-3 {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+   
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner-3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-3:hover .flip-card-inner-3 {
+    -webkit-transform: rotate3d(0,0, 30,180deg);
+    
+
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front-3, .flip-card-back-3 {
+    position: absolute;
+    border: 5px solid #8fc6f2;
+
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front-3 {
+    background-color: 
+    #142745;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back-3 {
+    background-color:  #142745;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container-cards{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+
+
+
+  @media (max-width: 600px) {
+    .container-cards {
+      flex-direction: column;
+    }
+  
+    .flip-card-1, .flip-card-2, .flip-card-3 {
+      width: 90%;
+      margin: 50px auto;
+    }
+  
+    .typewriter h1 {
+      display: none;
+    }
+
+
+    body{
+        background-image: linear-gradient(to right, #8fc6f2 , #142745);
+    }
+
+    footer{
+        display: none;
+    }
+  }
